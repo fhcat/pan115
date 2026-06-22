@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+*.conf
+cookies.txt
+*.txt
+!README.md
+!pyproject.toml
+.pytest_cache/

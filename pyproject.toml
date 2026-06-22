@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pan115"
+version = "0.1.0"
+description = "CLI tool to export 115.com download links to aria2 input files"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "typer>=0.12",
+]
+
+[project.scripts]
+"115" = "pan115.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pan115"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "responses>=0.25"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
