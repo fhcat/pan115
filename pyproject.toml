@@ -8,8 +8,8 @@ version = "0.1.0"
 description = "CLI tool to export 115.com download links to aria2 input files"
 requires-python = ">=3.10"
 dependencies = [
-    "requests>=2.31",
-    "typer>=0.12",
+    "requests>=2.34.2",
+    "typer>=0.27.3",
 ]
 
 [project.scripts]
@@ -19,7 +19,7 @@ dependencies = [
 packages = ["src/pan115"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "responses>=0.25"]
+dev = ["pytest>=9.2.0", "responses>=0.26.3"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
